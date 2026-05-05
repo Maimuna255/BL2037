@@ -46,4 +46,4 @@ python3 $BASE/src/mc_design.py \
 --num_iterations=$NITER \
 --predict_only=False \
 #--cyclic_offset=1
-#162
+# Antal e,E och 3:162
