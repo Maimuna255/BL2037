@@ -14,8 +14,8 @@ def main():
     # 3. Läs in argumenten
     args = parser.parse_args()
 
-    # 4. Använd argumenten för att läsa och spara
-    df = pd.read_csv(args.input_csv)
+    # 4. Använd argumenten för att läsa och spara sep=None och engine=python gör att pandas auto gissar om det är komma eller ;
+    df = pd.read_csv(args.input_csv, sep=None, engine='python')
     
     plt.figure()
     # Här väljer vi kolumn 2 (index 1) för histogrammet
