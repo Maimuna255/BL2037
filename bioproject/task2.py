@@ -17,14 +17,25 @@ def get_sequence_from_pdb(pdb_id, file_path):
     return seq
 
 def main():
+    # Definiera mappen en gång
+    base_dir = "/Users/monirulislam/bioprojekt/structures_R"
+    
+    # Skapa ordlistan snyggt och prydligt
     pdb_files = {
-        "8JIQ_R": "8JIQ_R.pdb",
-        "8E3Y_R": "8E3Y_R.pdb",
-        "6WI9_R": "6WI9_R.pdb",
-        "6X18_R": "6X18_R.pdb",
-        "7VQX_R": "7VQX_R.pdb",
-        "7YON_R": "7YON_R.pdb"
+        "8JIQ_R": f"{base_dir}/8JIQ_R.pdb",
+        "8E3Y_R": f"{base_dir}/8E3Y_R.pdb",
+        "6WI9_R": f"{base_dir}/6WI9_R.pdb",
+        "6X18_R": f"{base_dir}/6X18_R.pdb",
+        "7VQX_R": f"{base_dir}/7VQX_R.pdb",
+        "7YON_R": f"{base_dir}/7YON_R.pdb"
     }
+
+    results = []
+    
+    # Nu kan du loopa igenom dem
+    for name, path in pdb_files.items():
+        print(f"Analyserar {name}...")
+        # Här fortsätter din kod för att hämta sekvenser etc.
 
     # 1. Skapa FASTA-fil
     fasta_records = []

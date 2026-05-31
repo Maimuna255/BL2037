@@ -16,8 +16,8 @@ def parse_tmalign_output(output_text):
     return tm_score, rmsd
 
 def main():
-    reference = "8JIQ_R.pdb"
-    targets = ["8E3Y_R.pdb", "6WI9_R.pdb", "6X18_R.pdb", "7VQX_R.pdb", "7YON_R.pdb"]
+    reference = "/Users/monirulislam/bioprojekt/structures_R/8JIQ_R.pdb"
+    targets = ["/Users/monirulislam/bioprojekt/structures_R/8E3Y_R.pdb","/Users/monirulislam/bioprojekt/structures_R/6WI9_R.pdb","/Users/monirulislam/bioprojekt/structures_R/6X18_R.pdb","/Users/monirulislam/bioprojekt/structures_R/7VQX_R.pdb","/Users/monirulislam/bioprojekt/structures_R/7YON_R.pdb"]
     results = []
 
     print(f"{'Target':<15} | {'TM-score':<10} | {'RMSD':<10}")
